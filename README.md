@@ -31,6 +31,7 @@ The primary goal of this project was to create an online presence for Upasna Jan
 - **Staff List**: Details about the staff members of the NGO.
 - **Beneficiaries**: Information about the beneficiaries supported by the NGO.
 - **Gallery**: A showcase of images from various events and activities.
+- **CCTV**: A showcase various events and activities live through CCTV.
 - **Contact**: Contact form and information for reaching out to the NGO.
 
 ## Author

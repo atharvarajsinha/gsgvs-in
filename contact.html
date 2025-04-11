@@ -1,51 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UJKSS</title>
+    <title>GSGVS : Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="/component css/navbar.css">
     <link rel="stylesheet" href="/component css/footer.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="script.js"></script>
 </head>
+
 <body>
     <div include-html="/components/navbar.html"></div>
 
-    <div class="main-content">
-        <div class="contact">
-            <h1>Contact</h1>
-            <div class="content">
-                <h3>REGISTERED OFFICE</h3>
-                <p>
-                    UPASANA JAN KALYAN SEWA SAMITI
-                    <br>
-                    VILLAGE: MADHUPURI
-                    <br>
-                    POST: DEGOI
-                    <br>
-                    TEHSIL: AONLA
-                    <br>
-                    DISTRICT: BAREILLY UTTAR PRADESH: 243301
-                </p>
-                <h3>SENIOR CITIZEN HOME</h3>
-                <p>
-                    KASBA & POST: AONLA
-                    <br>
-                    DISTTRICT: BAREILLY, UTTAR PRADESH: 243301
-                    <br>
-                    MANGER: DORI SINGH
-                    <br>
-                    MOBILE: 81260 78344
-                    <br>
-                    EMAIL: upasanajkasmiti@rediffmail.com
-                </p>
+    <div class="contact">
+        <h1>Contact Details</h1>
+        <div class="contact-section" id="contact">
+            <div class="container">
+                <div class="contact-left">
+                    <h2>Contact Information</h2>
+                    <p>GANGA SUKH GRAMODHYOG VIKAS SANSTHAN</p>
+                    <p>Owner: SHAKUNTALA JOHRI</p>
+                    <p>Project Manager: SHIV JYOTI GANGWAR</p>
+                    <p><i class="fas fa-phone"></i> Phone: (+91) 98374 75322</p>
+                    <p><i class="fas fa-envelope"></i> Email: gangasukhgramodhyog@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Address: 484, Chahbai, Near Sankat Mochan Mandir,
+                        Bareilly (U.P.)</p>
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3510.641433439274!2d79.41078057499877!3d28.369688295969038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a0073b45e5f1b1%3A0xcee7dfb416e4d6a7!2s484%2C%20near%20Sankat%20Mochan%20Mandir%2C%20Chahbai%2C%20Koharapeer%2C%20Bareilly%2C%20Uttar%20Pradesh%20243003!5e0!3m2!1sen!2sin!4v1744373240794!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <div class="contact-right">
+                    <h2>Send Us a Message</h2>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" placeholder="Enter your message" rows="5"
+                                required></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                        <div id="loader" style="display: none;">
+                            <div class="spinner"></div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
 
-    <div include-html="/components/footer.html"></div>
-    <script>includeHTML();</script>
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <div include-html="/components/footer.html"></div>
+        <script>includeHTML();</script>
 </body>
+
 </html>
